@@ -15,8 +15,23 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+header {
+  background-image:
+    linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(https://t4.ftcdn.net/jpg/04/17/36/11/360_F_417361125_RnrhT3Np0zB0UpeD7QlwuOoyghEGGjBX.jpg);
+  background-size: cover;
+  background-position: center 55%;
+  padding-bottom: 90px;
+}
+
+h1 {
+  color: #f9f6ee;
+  font-size: 6rem;
+  text-align: center;
+}
+
 nav {
-  background-color: rgb(245, 245, 245, 0.95);
+  background-color: rgb(245, 245, 245, 0.83);
   padding-top: 2px;
   position: fixed;
   top: 0;
@@ -48,6 +63,16 @@ nav a:hover {
   background-color: rgb(181, 191, 203);
 }
 
+#opening-div {
+  background-color: whitesmoke;
+  box-shadow: 4.7px 4.7px 9px rgba(0, 0, 0, 0.15);
+  border: solid 0.5px #a7a7a7;
+  border-radius: 20px;
+  margin-top: 7px;
+  width: 973px;
+  padding: 10px 50px;
+}
+
 .image-container {
   width: 400px;
   height: 300px;
@@ -67,22 +92,18 @@ nav a:hover {
   transform: scale(1.1); /* zooms image to 110% */
 }
 
-#back-to-top {
-  position: fixed;
-  margin-left: 1800px;
-  transform: translateY(1200%);
-}
-
 #logo-container {
-  position: fixed;
+  padding: 10px;
+  transform: translate(10px);
+  background-color: rgb(245, 245, 245, 0.9);
   width: 70px;
   height: 70px;
   overflow: hidden; /* prevents zoomed image from spilling out */
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #logo-container img {
-  z-index: 999999;
+  display: inline-block;
   width: 100%;
   height: 100%;
   transition: transform 0.8s ease-in-out;
@@ -90,4 +111,8 @@ nav a:hover {
 
 #logo-container img:hover {
   transform: scale(1.15); /* zooms image to 115% */
+}
+
+footer {
+  text-align: center;
 }
