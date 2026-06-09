@@ -76,6 +76,8 @@ section {
 }
 
 #opening-section {
+  position: relative;
+  left: 5.5%;
   display: inline-block;
   background-color: whitesmoke;
   box-shadow: 4.7px 4.7px 9px rgba(0, 0, 0, 0.15);
@@ -84,6 +86,52 @@ section {
   margin-top: 7px;
   width: 90%;
   padding: 0.8rem 3rem;
+}
+
+#web-banner-one {
+  border-radius: 15px;
+  height: 400px;
+  width: 70%;
+  position: relative;
+  left: 15.5%;
+}
+
+#follow-up-section {
+  position: relative;
+  left: 5.5%;
+  display: inline-block;
+  background-color: whitesmoke;
+  box-shadow: 4.7px 4.7px 9px rgba(0, 0, 0, 0.15);
+  border: solid 0.5px #a7a7a7;
+  border-radius: 2rem;
+  margin: 7px auto;
+  width: 90%;
+  padding: 0.8rem 3rem;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10%;
+}
+
+.flex-images {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#formation {
+  border-radius: 15px;
+}
+
+#soccer-net {
+  border-radius: 15px;
+}
+
+#soccer-field {
+  border-radius: 15px;
 }
 
 #positions {
