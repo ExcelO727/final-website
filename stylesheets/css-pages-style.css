@@ -83,17 +83,17 @@ section {
   box-shadow: 4.7px 4.7px 9px rgba(0, 0, 0, 0.15);
   border: solid 0.5px #a7a7a7;
   border-radius: 2rem;
-  margin-top: 7px;
+  margin: 7px auto;
   width: 90%;
   padding: 0.8rem 3rem;
 }
 
 #web-banner-one {
   border-radius: 15px;
-  height: 400px;
-  width: 70%;
-  position: relative;
-  left: 15.5%;
+}
+
+#history {
+  border-radius: 15px;
 }
 
 #follow-up-section {
@@ -120,6 +120,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 40%;
+  float: right;
 }
 
 #formation {
@@ -132,12 +133,6 @@ section {
 
 #soccer-field {
   border-radius: 15px;
-}
-
-#positions {
-  width: 50rem;
-  height: 300px;
-  padding-left: 1.5%;
 }
 
 h2 {
@@ -189,6 +184,48 @@ h2 {
 
 #logo-container img:hover {
   transform: scale(1.15); /* zooms image to 115% */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-img {
+  height: 200px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grid-img:hover {
+  opacity: 0.5;
+}
+
+#grid-image {
+  transform: translate(199%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#grid-image:hover {
+  opacity: 0.5;
 }
 
 footer {
