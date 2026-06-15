@@ -7,7 +7,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +16,7 @@ body {
 }
 
 header {
+  /* This makes it so that the background image in the header is darker so the text can be read easier */
   background-image:
     linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url(https://t4.ftcdn.net/jpg/04/17/36/11/360_F_417361125_RnrhT3Np0zB0UpeD7QlwuOoyghEGGjBX.jpg);
@@ -138,7 +138,7 @@ section {
 h2 {
   font-size: 2.4rem;
 }
-
+/* This makes it so that in screen that are less than 474 pixels wide, the background image darkens even more to be more visible */
 @media all and (max-width: 474px) {
   header {
     background-image:
